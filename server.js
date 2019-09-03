@@ -51,6 +51,11 @@ server.get('/api/movies', (req, res) => {
   res.status(200).json(movies);
   
 });
+// add endpoint to see a list of actors,
+server.get('/api/actors', (req, res) => {
+  res.status(200).json(actors);
+})
+
 // export default server; // ES2015 modules
 // module.exports = { server }; // CommonJS modules (node)
 module.exports = server; // CommonJS modules (node)
